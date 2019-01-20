@@ -1,0 +1,247 @@
+.button {
+  background-color: #3A478F;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 18px;
+  transition: all 0.3s;
+  text-align: center;
+  border: 0;
+}
+.button:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.3s;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #3A478F;
+}
+
+h1, h2 {
+  font-size: 50px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+}
+
+#header {
+  height: 70px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  z-index: 5;
+}
+#header nav {
+  height: inherit;
+}
+#header nav ul {
+  padding: 0;
+  height: inherit;
+}
+#header nav ul.align-right {
+  text-align: right;
+}
+#header nav ul.logo li {
+  margin-left: 0;
+}
+#header nav ul.logo li img {
+  margin-right: 10px;
+}
+#header nav ul li {
+  line-height: 70px;
+  height: 70px;
+  font-weight: bold;
+  margin-left: 35px;
+  list-style-type: none;
+  display: inline-block;
+}
+#header nav ul li a {
+  color: black;
+  transition: all 0.3s;
+}
+#header nav ul li a:hover {
+  color: #3A478F;
+  transition: all 0.3s;
+}
+#header nav ul li a.button {
+  color: white;
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+  width: 100px;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+#header nav ul li img {
+  height: 32px;
+  width: 32px;
+}
+
+#hero {
+  height: 100%;
+  padding: 80px 20px 60px 20px;
+}
+#hero .grid-container, #hero .grid-x {
+  height: 100%;
+}
+#hero .cell.large-6 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#hero .illustration {
+  background: url("../images/achieve.png");
+  background-position: center;
+  background-size: 450px;
+  background-repeat: no-repeat;
+}
+
+#about {
+  padding: 80px 20px;
+  background-color: #F2F5FA;
+}
+#about img {
+  display: block;
+  margin: auto;
+  animation: rotate 30s infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
+
+#how-it-works {
+  background-color: #F2F5FA;
+  padding: 80px 20px;
+}
+#how-it-works .how-to-card {
+  height: 250px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+}
+#how-it-works .how-to-card.highlight {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 5px rgba(58, 71, 143, 0.09);
+}
+#how-it-works .how-to-card img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+#how-it-works .how-to-card h3 {
+  font-size: 22px;
+  padding: 0 20px;
+}
+
+#register {
+  padding: 80px 20px;
+}
+#register .bg-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 320px;
+  margin: 20px auto;
+  height: 300px;
+}
+#register .bg-image.student {
+  background-image: url("../images/student-girl.png");
+}
+#register .bg-image.mentor {
+  background-image: url("../images/mentor.png");
+}
+#register .bg-image.investor {
+  background-image: url("../images/investor.png");
+}
+#register .button {
+  margin: auto;
+  display: block;
+  width: 200px;
+}
+
+#moto {
+  padding: 80px 0;
+  height: 100%;
+}
+#moto .grid-x, #moto .grid-container, #moto .cell {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#moto .cell.illustration {
+  background-image: url("../images/student.png");
+  background-size: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#moto h2 {
+  color: black;
+}
+
+footer {
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  background-color: #3A478F;
+  color: white;
+  font-weight: bold;
+}
+
+#form {
+  padding: 80px 20px;
+}
+#form form input, #form form select {
+  background-color: #F2F5FA;
+  color: black;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: 0;
+}
+#form form input:focus, #form form input:hover, #form form input:visited, #form form select:focus, #form form select:hover, #form form select:visited {
+  border: 0;
+}
+#form form input.button, #form form select.button {
+  background-color: #3A478F;
+  color: white;
+  transition: all 0.3s;
+}
+#form form input.button:hover, #form form select.button:hover {
+  background-color: black;
+  transition: all 0.3s;
+}
+
+/*# sourceMappingURL=style.css.map */
